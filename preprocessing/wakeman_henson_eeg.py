@@ -26,7 +26,7 @@ plt.plot(trial_1.numpy(), label='Trial 1')
 plt.plot(trial_2.numpy(), label='Trial 2')
 plt.plot(trial_3.numpy(), label='Trial 3')
 #%%
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 
 path = 'data/'
 processing = 'simple'

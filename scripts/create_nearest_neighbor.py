@@ -1,6 +1,6 @@
 #%%
 from collections import defaultdict
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 import torch
 path = 'data/'
 processing = 'simple'

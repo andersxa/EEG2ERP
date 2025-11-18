@@ -6,8 +6,8 @@ torch._dynamo.config.cache_size_limit = 512
 torch._dynamo.config.accumulated_cache_size_limit = 1024
 torch.set_float32_matmul_precision('high')
 
-from data import ERPDataset, ERPBootstrapTargets, ERPCoreNormalizer, ModelState, Inputs, Targets, R2Metric
-from util import get_measures
+from eeg2erp.data import ERPDataset, ERPBootstrapTargets, ERPCoreNormalizer, ModelState, Inputs, Targets, R2Metric
+from eeg2erp.utils import get_measures
 
 import pandas as pd
 

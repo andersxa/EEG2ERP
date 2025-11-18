@@ -2,7 +2,7 @@
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import torch
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 from tqdm import tqdm
 
 dataset = ERPDataset(path='data/', split='train', processing='simple', num_samples=585, no_leakage=True, restricted=False).to('cuda')
@@ -59,7 +59,7 @@ for i, t in enumerate(tasks):
     ax[i].legend()
 plt.show()
 # %%
-from data import ERPCoreData
+from eeg2erp.data import ERPCoreData
 dataset = ERPCoreData(path='data/', split='dev', processing='simple', sample_method='weighted', num_samples=585, no_leakage=True, restricted=False)
 #%%
 s = dataset.unique_subjects[0]

@@ -1,4 +1,4 @@
-from model import ERPUNet, ERPAE, CSLPAE
+from .models import ERPUNet, ERPAE, CSLPAE
 import torch
 from sklearn.decomposition import PCA
 from collections import defaultdict

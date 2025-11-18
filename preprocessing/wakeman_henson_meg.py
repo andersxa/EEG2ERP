@@ -30,7 +30,7 @@ ax.plot(trial_3.numpy(), label='Trial 3')
 plt.title(f'Channel {i}')
 plt.show()
 #%%
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 
 path = 'dataM/'
 processing = 'simple'

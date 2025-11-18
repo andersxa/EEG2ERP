@@ -1,8 +1,8 @@
 import wandb
 import argparse
 from tqdm import tqdm
-from test import test_model
-from data import ERPDataset, ERPBootstrapTargets, ERPCoreNormalizer
+from eeg2erp.evaluation import test_model
+from eeg2erp.data import ERPDataset, ERPBootstrapTargets, ERPCoreNormalizer
 import os
 
 

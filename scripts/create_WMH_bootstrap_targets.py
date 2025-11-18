@@ -2,10 +2,10 @@
 import numpy as np
 import torch
 from collections import defaultdict
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 from tqdm import tqdm
 import math
-from util import plot_r_squared_boxplots
+from eeg2erp.utils import plot_r_squared_boxplots
 #%%
 # dataset = ERPDataset(path='data/', split='train', processing='simple', no_leakage=False)
 # max_trials = 0

@@ -170,14 +170,14 @@ torch.save(
 # # Save xDAWN objects separately
 # torch.save(xdawn_dict, "data/BCISpeller/xdawn_models.pt")
 #%%
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 
 path = 'data/BCISpeller/'
 processing = 'simple'
 dataset = ERPDataset(path, split='train', processing=processing)
 dataset.save_mean_std()
 #%%
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 import torch
 path = 'data/BCISpeller/'
 processing = 'simple'

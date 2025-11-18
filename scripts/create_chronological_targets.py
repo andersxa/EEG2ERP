@@ -2,7 +2,7 @@
 import numpy as np
 import torch
 from collections import defaultdict
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 from tqdm import tqdm
 import math
 #%%

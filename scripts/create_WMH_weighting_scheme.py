@@ -2,7 +2,7 @@
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import torch
-from data import ERPDataset
+from eeg2erp.data import ERPDataset
 from tqdm import tqdm
 
 dataset = ERPDataset(path='data/', split='train', processing='simple', num_samples=288, no_leakage=True, restricted=True).to('cuda')
